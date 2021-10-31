@@ -46,3 +46,8 @@ button{
   display: block;
   clear: both;
 }
+.oneLine{           //超过一行 自动加省略号
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
