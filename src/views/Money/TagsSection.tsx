@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import React from 'react';
 import {useTags} from 'hooks/useTags';
-import {createId} from 'lib/createId';
 
 const Wrapper = styled.section`
   background: #FFFFFF;
@@ -43,7 +42,7 @@ type Props = {
   onChange: (selected: number[]) => void;
 }
 const TagsSection: React.FC<Props> = (props) => {
-  const {tags, setTags, addTag} = useTags();
+  const {tags, addTag} = useTags();
   const selectedTagIds = props.value;
   const onToggleTag = (tagId: number) => {
     const index = selectedTagIds.indexOf(tagId);
