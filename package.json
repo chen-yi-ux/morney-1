@@ -1,6 +1,7 @@
 {
   "name": "morney-11",
   "version": "0.1.0",
+  "homepage": "https://chen-yi-ux.github.io/morney-1-website",
   "private": true,
   "dependencies": {
     "@babel/core": "7.12.3",
